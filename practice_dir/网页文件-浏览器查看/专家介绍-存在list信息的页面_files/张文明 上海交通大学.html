@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>张文明-上海交通大学机械与动力工程学院</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/css.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src=/js/bootstrap.min.js></script>
+    <script type="text/javascript">
+        function search_validate(){
+            if(document.getElementById('search_keywords').value == ''){
+                alert('请输入搜索关键字');
+                return false;
+            }
+        }
+        function search_validate_mobile(){
+            if(document.getElementById('search_keywords_mobile').value == ''){
+                alert('请输入搜索关键字');
+                return false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $('.ny_nr,.snr').find('div').css('textIndent','2em');
+            $('.ny_nr > p,.snr > p').each(function(){
+                //if($(this).html().length > 15){
+                    $(this).css('textIndent','2em');
+                    $(this).find('br:eq(0)').remove();
+                //}
+            });
+            $('.ny_nr,.snr').find('table').css('margin','0 auto').find('p').each(function(){
+                $(this).html($(this).text()).css('padding','0px');
+            });
+            $('.ny_nr,.snr').find('table').parent('div').removeAttr('style');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="main">
+            <a href="/" class="logo"></a>
+            <!--pc上显示-->
+            <ul class="cd_t">
+                <li><a href="/index_zxs.html">在校生</a></li>
+                <li class="l_x">|</li>
+                <li><a href="/index_jzg.html">教职工</a></li>
+                <li class="l_x">|</li>
+                <li><a href="/index_xy.html">校友</a></li>
+                <li class="l_x">|</li>
+                <li><a href="/index_fk.html">访客</a></li>
+                <li class="l_x">|</li>
+                                <li><a href="http://me.sjtu.edu.cn/user/login.html">登录</a></li>
+                                <li class="l_x">|</li>
+                <li><a href="/en/">ENGLISH</a></li>
+            </ul>
+            <div class="ss">
+                <form method="get" action="http://me.sjtu.edu.cn/active/search.html" onsubmit="return search_validate();">
+                <input type="text" class="ss_txt" id="search_keywords" name="search_keywords" placeholder="站内搜索">
+                <input name="" type="submit" value=" " class="ss_an" />
+                </form>
+            </div>
+            <!--/pc上显示-->
+            <span class="menu2" id="menu2"><a href="javascript:void(0)">&nbsp;</a></span>
+        </div>
+    </div>
+    <div id=navk>
+        <!--手机上显示-->
+        <ul class="cd_t">
+            <li><a href="/index_zxs.html">在校生</a></li>
+            <li class="l_x">|</li>
+            <li><a href="/index_jzg.html">教职工</a></li>
+            <li class="l_x">|</li>
+            <li><a href="/index_xy.html">校友</a></li>
+            <li class="l_x">|</li>
+            <li><a href="/index_fk.html">访客</a></li>
+            <li class="l_x">|</li>
+                        <li><a href="#">登录</a></li>
+                        <li class="l_x">|</li>
+            <li><a href="/en/">ENGLISH</a></li>
+        </ul>
+        <div class="ss">
+            <form method="get" action="http://me.sjtu.edu.cn/active/search.html" onsubmit="return search_validate_mobile();">
+            <input type="text" class="ss_txt" id="search_keywords_mobile" name="search_keywords" placeholder="站内搜索">
+            <input name="" type="button" value=" " class="ss_an" />
+            </form>
+        </div>
+        <!--/手机上显示-->
+        <ul class="menu">
+            <!--当前栏目请在Li里引用on-->
+            <li class="l_home "><a href="/" class="dbt" style="font-weight: bold;">首 页</a></li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/about_us.html" class="dbt">学院概况</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/college_profile.html">学院简介</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/college_history.html">历史沿革</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/school_profile.html">办学概况</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/leader_team.html">领导团队</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/political_institution.html">行政机构</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/map.html">学院地图</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/personnel_training.html" class="dbt">三全育人</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/rencai_profile.html">概况</a></dd>
+                                        <dd><a href="http://202.120.53.238/bkjx/">本科生</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/YanJS/">研究生</a></dd>
+                                        <dd><a href="http://mem.jdgs.sjtu.edu.cn/">非全日制专硕</a></dd>
+                                        <dd><a href="http://mexsgz.sjtu.edu.cn/">学生工作</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="on">
+                <a href="http://me.sjtu.edu.cn/teacher_team.html" class="dbt">师资队伍</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/teacher_profile.html">师资概况</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/academician.html">院士学者</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/teacher_directory.html">教师名录</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/bsh.html">博士后</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/hr_service.html">人事服务</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/scientific_research.html" class="dbt">科学研究</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/scientific_survey.html">科研概况</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/scientific_research_institution.html">科研机构</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/keyanjidi.html">科研基地</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/research_project.html">科研项目</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/scientific_achievements.html">科研成果</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/scientific_service.html">科研服务</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/sysgl.html">实验室管理</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/Party_voice.html" class="dbt">党建之声</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/19da.html">十九大精神专题</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/theory.html">理论学习</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/Grassroots_building.html">基层党建</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/Cadre_work.html">干部工作</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/Rules_regulations.html">规章制度</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/Party_building.html">党建服务</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/international_co_operation.html" class="dbt">国际合作</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/overview_of_international_cooperation.html">国际合作概况</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/foreign_affairs.html">外事指南</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/study_tour.html">海外游学项目</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/procedures.html">因公出国（境）</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/talent_recruitment.html" class="dbt">人才招聘</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/hr.html">招聘启事</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/hr_plan.html">人才计划</a></dd>
+                                    </dl>
+                            </li>
+                        <li style="width: 125px;" class="">
+                <a href="http://me.sjtu.edu.cn/alumni.html" class="dbt">校友专栏</a>
+                                <dl>
+                                        <dd><a href="http://me.sjtu.edu.cn/alumni_news.html">校友动态</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/alumni_directory.html">校友名录</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/alumni_known.html">知名校友</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/growth_mark.html">成长印迹</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/fund_donation.html">基金捐赠</a></dd>
+                                        <dd><a href="http://me.sjtu.edu.cn/contact_us.html">联系我们</a></dd>
+                                    </dl>
+                            </li>
+                    </ul>
+        <div class="clear"></div>
+    </div>
+    <SCRIPT type=text/javascript>
+    $(document).ready(function() {
+        var pk = document.body.clientWidth;
+        if (pk < 1180) {
+            //手机菜单
+            $("#menu2").click(function() {
+                if ($("#navk").css("display") == "none") {
+                    $(this).find("a").addClass("on");
+                    $("#navk").slideDown("slow");
+                } else {
+                    $(this).find("a").removeClass("on");
+                    $("#navk").slideUp("slow");
+                }
+            });
+        } else {
+            $(".menu li").hover(function() {
+                $(this).find("dl").css("display", "block");
+            }, function() {
+
+                $(this).find("dl").css("display", "none");
+            });
+
+        };
+    });
+    //-->
+    </SCRIPT>
+
+
+<div class="nyk">
+    <div class="main">
+    	        <div class="ny_bt">教师名录</div>
+        <div class="nr_js">
+            <div class="imgk"><img src="/upload/image/20190315/20190315094029.jpg"></div>
+            <div class="txtk">
+                <p class="p_1"><b>张文明</b> 教授</p>
+                <p>
+                    <b>所在系所</b>振动、冲击、噪声研究所                    <br>
+                    <b>办公电话</b>021-34208409                    <br>
+                    <b>通讯地址</b>上海交大机械与动力工程学院机动大楼A-838室                    <br>
+                    <b>电子邮件</b>wenmingz@sjtu.edu.cn                                        <br>
+                    <b>个人主页</b>
+                                    </p>
+            </div>
+        </div>
+        <ul class="lb_js2">
+        	            <li>
+                <h2>教育背景</h2>
+                <div class="txtk">2003-2006 上海交通大学 机械工程专业博士 <br />
+2000-2003 无锡轻工大学（现江南大学）机械工程专业硕士 <br />
+1996-2000 无锡轻工大学（现江南大学）机械工程专业学士 </div>
+            </li>
+                                    <li>
+                <h2>工作经历</h2>
+                <div class="txtk">2019-       上海交通大学机械与动力工程学院 　党委副书记<br />
+2017-       上海交通大学机械与动力工程学院 　特聘教授，副所长<br />
+2013-2016   上海交通大学机械与动力工程学院 　研究员、博士生导师<br />
+2009-2012   上海交通大学机械与动力工程学院 　副教授<br />
+2006-2008   上海交通大学机械与动力工程学院 　师资博士后、讲师<br />
+</div>
+            </li>
+                                    <li>
+                <h2>出访及挂职经历</h2>
+                <div class="txtk">2014.08-2014.09   英国谢菲尔德大学自动化学院  访问教授 <br />
+2013.07-2013.08   英国谢菲尔德大学自动化学院  访问学者 <br />
+2011.03-2013.02   国家自然科学基金委员会数理科学部力学处  流动项目主任 <br />
+2010.10-2011.02   日本京都大学  日本学术振兴会（JSPS）特别研究员</div>
+            </li>
+                                    <li>
+                <h2>研究方向</h2>
+                <div class="txtk">动力学设计理论、分析方法及振动控制技术 <br />
+【微纳机电系统】--微纳系统动力学、谐振传感理论与器件、超高频振动测量<br />
+【智能材料结构与系统】--振动能量采集技术、智能柔性驱动器件、软体机器人设计与控制<br />
+【转子动力学】--航空发动机、Power MEMS、气浮润滑技术、磁悬浮技术等<br />
+【微振动与控制】--航天器惯性执行器件、卫星压紧释放结构、柔性管路系统、核电装备微振动与控制技术<br />
+【精密测量与检测】--微纳米力学表征方法与技术、磁悬浮检测理论与技术<br />
+【褶皱力学与表面器件】--褶皱力学设计理论、微纳米褶皱图案转移技术</div>
+            </li>
+                                    <li>
+                <h2>科研项目</h2>
+                <div class="txtk">【国家/省部级科研项目】 <br />
+2019-2022  上海市优秀学术带头人计划项目“谐振微机电系统动力学设计理论与传感技术”，负责人<br />
+2019-2023  上海市教育委员会科研创新计划自然科学重大项目“高敏抗磁悬浮检测机理、动力学设计理论与调控方法”，负责人<br />
+2018-2021  国家“两机”重大专项基础研究项目"***叶端定时***研究"，课题负责人<br />
+2018-2020  国家自然科学基金重大研究计划项目“快速滚动自组装软体机器人主动变形机理、动力学设计理论与控制方法研究”，负责人<br />
+2017-2021  国家杰出青年科学基金项目“微机电系统动力学”，负责人<br />
+2016-2019  国家自然科学基金面上项目"微型抗磁性轴承稳定磁悬浮机理、非线性动力学理论与实验研究"，负责人<br />
+2015-2017  上海市曙光学者计划项目“微机械谐振器非线性参激振动机理研究”，负责人 <br />
+2015-2017  上海市教委科研创新项目“大行程静电驱动纳米定位系统耦合动力学设计与分析方法研究”，负责人 <br />
+2014-2016  国家优秀青年科学基金项目“微机电系统动力学”，负责人 <br />
+2014-2014  国家自然科学基金专项项目“静电驱动纳米定位系统的微扰动作用机理与非线性动力学行为研究”，负责人 <br />
+2014-2017  教育部高等院校霍英东青年教师基金项目“复杂环境下微机械谐振器的能量耗散机制与控制方法研究”，负责人 <br />
+2013-2015  国家“万人计划”中组部青年拔尖人才支持计划项目“微机电系统动力学与控制”，负责人 <br />
+2011-2013  国家自然科学基金面上项目“微转子系统气体轴承的高阶滑移机理、尺度律及动力学特性研究”，负责人 <br />
+2011-2013  上海市青年科技启明星计划“多场耦合作用下静电MEMS器件失效机理、可靠性评估与寿命预测方法研究”，负责人 <br />
+2011-2012  科技部国家重点实验室专项项目“纳米定位系统的非线性振动溯源与控制”，负责人 <br />
+2009-2010  科技部国家重点实验室专项项目“微转子—气体轴承系统动力特性理论与试验研究”，负责人 <br />
+2009-2011  上海交通大学晨星青年学者奖励计划项目“超高速微转子系统薄膜润滑机理研究”，负责人 <br />
+2009-2011  上海交通大学医工(理)交叉研究基金面上项目“微型智能化慢性脊髓压迫器研制及应用”，合作方负责人 <br />
+2007-2009  国家自然科学基金青年项目“参数激励静电驱动微机电系统的非线性振动与控制”，负责人 <br />
+2007-2008  中国博士后科学基金项目“静电驱动微机电系统非线性动力学特性研究”，负责人 <br />
+<br />
+2011-2015  国家973计划项目子课题“大型装备中动力学非线性耦合机理”，学术骨干 <br />
+2008-2011  国家自然科学基金重点项目“燃气轮机转子系统在多场耦合作用下的非线性振动与控制”，学术骨干 <br />
+2004-2007  国家杰出青年科学基金项目“超高速、超微转子系统的非线性振动与控制”，主要完成人 <br />
+<br />
+【企/事业委托项目】<br />
+2019-2019  上海空间推进研究所，“XX自锁阀抗冲击***分析方法”，负责人<br />
+2018-2019  上海航天805研究所，“XX卫星柔性管路与电缆展开过程的仿真与试验研究”，负责人 <br />
+2016-2018  上海航天先进技术联合研究中心技术创新项目，“***微振动生成机理与控制方法”，负责人 <br />
+2016-2017  上海卫星工程研究所，“XX卫星核心机构***力学分析”，负责人 <br />
+2014-2016  TRIO中国上海杰弗朗机械设备有限公司，“用模态分析方法指导振动筛的改进设计”，负责人 <br />
+2013-2013  中科院上海技术物理研究所，“某工件***力学分析”，负责人 </div>
+            </li>
+                                    <li>
+                <h2>代表性论文专著</h2>
+                <div class="txtk">【专著手册】<br />
+1、孟光, 张文明.《微机电系统动力学》, 北京: 科学出版社, 2008, 42余万字. (科学出版基金资助)<br />
+2、孟光, 张文明, 等. 《动力学、振动与控制新进展》, 北京: 宇航出版社, 2006. (章节, 5余万字)<br />
+3、张文明, 孟光, 等. Models and Applications of Chaos Theory in Modern Sciences, 2011, Science Publishers. (章节)<br />
+4、张文明. 轴和轴系的临界转速. 《现代机械设计手册》, 2011，北京：化工出版社. (章节, 6余万字)<br />
+<br />
+【期刊论文】<br />
+(待发表论文)<br />
+(163) Gao, Qiu-Hua; Yan, Ge; Zou, Hong-Xiang; Zhang, Wen-Ming*; Peng, Zhike; Meng, Guang. Density-based Measurement and Manipulation via Magnetic Levitation Enhanced by the Dual-Halbach Array. IEEE Sensors Journal, 2019, DOI: 10.1109/JSEN.2019.2949585.<br />
+(162) Edmond Q. Wu ; Li-Min Zhu ; Wen-Ming Zhang ; Ping-Yu Deng ; Bo Jia ; Sheng-Di Chen ; He Ren ; Gui-Rong Zhou. Novel Nonlinear Approach for Real-Time Fatigue EEG Data: An Inﬁnitely Warped Model of Weighted Permutation Entropy. IEEE Transactions on Intelligent Transportation Systems, 2019, doi: 10.1109/TITS. 2019. 2918438. <br />
+(161) Yuyong Xiong ; Zhike Peng ; Wei Jiang ; Qingbo He ; Wenming Zhang ; Guang Meng. An Effective Accuracy Evaluation Method for LFMCW Radar Displacement Monitoring with Phasor Statistical Analysis. IEEE Sensors Journal, 2019, doi: 10.1109/JSEN. 2019. 2938620. <br />
+(2020年度）<br />
+(160)  Feng-Rui Liu, Wen-Ming Zhang*, Lin-Chuan Zhao, Hong-Xiang Zou, Ting Tan, Zhi-Ke Peng, Guang Meng. Performance enhancement of wind energy harvester utilizing wake flow induced by double upstream flat-plates. Applied Energy,  2020, 257: 114034. <br />
+(159) Li, Z., Wen, B., Wei, K., Yang, W., Peng, Z., & Zhang, W. Flexible dynamic modeling and analysis of drive train for Offshore Floating Wind Turbine. Renewable Energy, 2020, 145: 1292-1305.<br />
+(2019年度)<br />
+(158) Li, Wen-Bo ; Zhang, Wen-Ming*; Zou, Hong-Xiang; Peng, Zhi-Ke; Meng, Guang. Bio-inspired Variable Stiffness Dielectric Elastomer Actuators with Large and Tunable Load Capacity. Soft robotics,  2019, 6(5): 631-643.<br />
+(157) Lin-Chuan Zhao, Hong-Xiang Zou, Ge Yan, Feng-Rui Liu, Ting Tan, Ke-Xiang Wei, Wen-Ming Zhang*. Magnetic coupling and flextensional amplification mechanisms for high-robustness ambient wind energy harvesting. Energy Conversion and Management, 2019, 201: 112166.<br />
+(156) Hong-Xiang Zou, Lin-Chuan Zhao, Lei Zuo, Feng-Rui Liu, Ting Tan, Ke-Xiang Wei, Wen-Ming Zhang*. Mechanical modulations for enhancing energy harvesting: principles, methods and applications. Applied Energy,  2019, 255: 113871.<br />
+(155) Gao, Qiu-Hua; Zhang, Wen-Ming*; Zou, Hong-Xiang; Li, Wen-Bo; Yan, Han; Peng, Zhi-Ke; Meng, Guang. Label-free Manipulation via Magneto-Archimedes Effect: Fundamentals, Methodology and Applications. Materials Horizons, 2019, 6: 1359-1379.<br />
+(154) Tan, Ting, Yan, Zhimiao, Zou, Hongxiang, Ma, Kejing, Liu, Fengrui, Zhao, Linchuan, Peng, Zhike, Zhang, Wenming*. Renewable energy harvesting and absorbing via multi-scale metamaterial systems for Internet of things. Applied Energy, 2019, 254(15): 113717.<br />
+(153) Feng-Rui Liu, Wen-Ming Zhang*, Zhi-Ke Peng, Guang Meng. Fork-shaped bluff body for enhancing the performance of galloping-based wind energy harvester. Energy, 2019, 183: 92-105.<br />
+(152) Hu, K. M., Xue, Z. Y., Liu, Y. Q., Song, P. H., Le, X. H., Peng, B., Yan, H., Di, Z. F., Xie, J., Lin, L. W., Zhang, W. M.* Probing built-in stress effect on the defect density of stretched monolayer graphene membranes. Carbon, 2019, 152: 233-240.<br />
+(151) Han Yan, Wen-Ming Zhang*, Hui-Ming Jiang, Kai-Ming Hu, Zhi-Ke Peng, Guang Meng. Fluid-solid vibration of particles in the microchannel resonators and its effect on the mass measurement. Journal of Vibration and Acoustics-Transactions on the ASME, 2019, 141: 041005.<br />
+(150) Kai-Ming Hu, Wen-Ming Zhang*, Han Yan, Zhi-Ke Peng and Guang Meng. Nonlinear pull-in instability of suspended graphene-based sensors. EPL, 2019, 125: 20011.<br />
+(149) Qiu-Hua Gao, Wen-Bo Li, Hong-Xiang Zou, Han Yan, Zhi-Ke Peng, Guang Meng, Wen-Ming Zhang*. A centrifugal magnetic levitation approach for high-reliability density measurement. Sensors & Actuators: B. Chemical, 2019, 287: 64-70.<br />
+(148) Lin-Chuan Zhao, Hong-Xiang Zou, Ge Yan, Feng-Rui Liu, Ting Tan, Wen-Ming Zhang*, Zhi-Ke Peng and Guang Meng. A water-proof magnetically coupled piezoelectric-electromagnetic hybrid wind energy harvester. Applied Energy, 2019, 239: 735–746.<br />
+(147) Kai-Ming Hu, Zhong-Ying Xue, Yun-Qi Liu, Hu Long, Bo Peng, Han Yan, Zeng-Feng Di, * Xi Wang, Liwei Lin, Wen-Ming Zhang*. Tension-Induced Raman Enhancement of Graphene Membranes in the Stretched State. Small,  2019, 15: 1804337.<br />
+(146) Tan, T., Hu, X., Yan, Z., Zhang, W. Enhanced low-velocity wind energy harvesting from transverse galloping with super capacitor. Energy, 2019, 187: 115915.<br />
+(145) Yun-Hua Zhao, Qi-Wei Guo, Song Wu, Guang Meng, Wen-Ming Zhang*. Design and experimental validation of an annular dielectric elastomer actuator for active vibration isolation. Mechanical Systems and Signal Processing, 2009, 134: 106367.<br />
+(144) Tan, T., Yan, Z., Zou, Y., Zhang, W. Optimal dual-functional design for a piezoelectric autoparametric vibration absorber. Mechanical Systems and Signal Processing, 2019, 123: 513-532.<br />
+(143) Wei, Y., Wei, S., Zhang, Q., Dong, X., Peng, Z., Zhang, W. Targeted energy transfer of a parallel nonlinear energy sink. Applied Mathematics and Mechanics, 2019, 40(5): 621-630.<br />
+(142) Lan, J., Zhang, Q., Wei, S., Peng, Z., Dong, X., Zhang, W. Uncertainty quantification for stochastic dynamical systems using time-dependent stochastic bases. Applied Mathematics and Mechanics, 2019, 40(1): 63-84.<br />
+(141) Feng-Rui Liu, Han Yan, Wen-Ming Zhang*. Nonlinear dynamic analysis of a photonic crystal nanocavity resonator. Applied Mathematics and Mechanics, 2019, 40(1): 139-152.<br />
+(140) Y. Qu, Z. Peng, W. Zhang, G. Meng. Nonlinear vibro-acoustic behaviors of coupled sandwich cylindrical shell and spring-mass-damper systems. Mechanical Systems and Signal Processing, 2019 124: 254-274.<br />
+(139) Y. Qu, W. Zhang, Z. Peng, G.Meng. Nonlinear structural-acoustic responses of three-dimensional elastic cylindrical shells with attached internal structures. Applied Acoustics, 2019, 149:143-155.<br />
+(138) Peng Zhou, Minggang Du, Shiqian Chen, Qingbo He, Zhike Peng, Wenming Zhang. Study on intra-wave frequency modulation phenomenon in detection of rub-impact fault. Mechanical Systems and Signal Processing 122 (2019) 342–363.<br />
+(137) Cheng, C. M., Dong, X. J., Peng, Z. K., Zhang, W. M., & Meng, G. (2019). Kautz basis expansion-based Hammerstein system identification through separable least squares method. Mechanical Systems and Signal Processing, 121, 929-941.<br />
+(136) Yang, Y., Peng, Z., Zhang, W., & Meng, G. (2019). Parameterised time-frequency analysis methods and their engineering applications: A review of recent advances. Mechanical Systems and Signal Processing, 119, 182-221.<br />
+(135) Chen, S., Yang, Y., Peng, Z., Dong, X., Zhang, W., & Meng, G. (2019). Adaptive chirp mode pursuit: Algorithm and applications. Mechanical Systems and Signal Processing, 116, 566-584.<br />
+(134) Liu, Z., He, Q., Chen, S., Dong, X., Peng, Z., & Zhang, W. (2019). Frequency-domain intrinsic component decomposition for multimodal signals with nonlinear group delays. Signal Processing, 154, 57-63.<br />
+(133) Chen, S., Yang, Y., Peng, Z., Wang, S., Zhang, W., & Chen, X. Detection of rub-impact fault for rotor-stator systems: A novel method based on adaptive chirp mode decomposition[J]. Journal of Sound and Vibration, 2019, 440: 83-99.<br />
+(132) Wen, B., Tian, X., Dong, X., Peng, Z., Zhang, W., & Wei, K. A numerical study on the angle of attack to the blade of a horizontal-axis offshore floating wind turbine under static and dynamic yawed conditions[J]. Energy, 2019, 168: 1138-1156.<br />
+(131) Xie, F., Qu, Y., Guo, Q., Zhang, W., Peng, Z. Nonlinear flutter of composite laminated panels with local non-smooth friction boundaries. Composite Structures, 2019, 223: 110934.<br />
+(130) Qu Y, Zhang W, Peng Z, Meng G. Time-domain structural-acoustic analysis of composite plates subjected to moving dynamic loads[J]. Composite Structures, 2019, 208: 574-584.<br />
+(129) Xie F, Qu Y, Zhang W, Peng Z, Meng G. Nonlinear aerothermoelastic analysis of composite laminated panels using a general higher-order shear deformation zig-zag theory[J]. International Journal of Mechanical Sciences, 2019, 150: 226-237.<br />
+(2018年度)<br />
+(128) Li, Wen-Bo ; Zhang, Wen-Ming*; Zou, Hong-Xiang; Peng, Zhi-Ke; Meng, Guang. Multisegment annular dielectric elastomer actuators for soft robots. Smart Materials and Structures, 2018, 27: 115024 (13pp).<br />
+(127) Honghao Hou, Kaiming Hu, Hongbo Lin, Joe Forth, Wenming Zhang*, Thomas P. Russell*, Jie Yin, Xuesong Jiang*. Reversible Surface Patterning by Dynamic Crosslink Gradients: Controlling Buckling in 2D. Advanced Materials, 2018, 30: 1803463.<br />
+(126) Wen-Bo Li, Wen-Ming Zhang*, Hong-Xiang Zou, Zhi-Ke Peng, Guang Meng. A Fast Rolling Soft Robot Driven by Dielectric Elastomer. IEEE/ASME Transactions on Mechatronics, 2018, 23(4): 1630-1640.<br />
+(125) Lin-Chuan Zhao, Hong-Xiang Zou, Ge Yan, Wen-Ming Zhang *, Zhi-Ke Peng, Guang Meng. Arbitrary-directional broadband vibration energy harvesting using magnetically coupled flextensional transducers. Smart Materials and Structures, 2018, 27: 095010.<br />
+(124) Lu Hu, Han Yan, Wen-Ming Zhang*, Hong-Xiang Zou, Zhi-Ke Peng, Guang Meng. Theoretical and experimental study on dynamic characteristics of V-shaped beams immersed in viscous fluids: from small to finite amplitude. Journal of Fluids and Structures, 2018, 82: 215-244.<br />
+(123) Feng-Rui Liu, Hong-Xiang Zou, Wen-Ming Zhang*, Zhi-Ke Peng, Guang Meng. Y-type three-blade bluff body for wind energy harvesting. Applied Physics Letters, 2018, 112, 233903.<br />
+(122)  Yunhua Zhao, Wen-Bo Li, Wen-Ming Zhang*, Han Yan, Zhi-Ke Peng,  Guang Meng. Performance improvement of planar dielectric elastomer actuators by magnetic modulating mechanism. Smart Materials and Structures, 2018, 27: 065007.<br />
+(121) Qiu-Hua Gao, Wen-Ming Zhang*, Hong-Xiang Zou,  Feng-Rui Liu, Wen-Bo Li, Zhi-Ke Peng,  Guang Meng.Tunable rotating-mode density measurement using magnetic levitation. Applied Physics Letters, 2018, 112: 142408.<br />
+(120) Hong-Xiang Zou, Wen-Ming Zhang*, Wen-Bo Li, Ke-Xiang Wei, Kai-Ming Hu, Zhi-Ke Peng,  Guang Meng. Magnetically coupled flextensional transducer for wideband vibration energy harvesting: design, modeling and experiments. Journal of Sound and Vibration, 2018, 416: 55-79.<br />
+(119) Yang, Y., Peng, Z., Dong, X., Zhang, W., & Clifton, D. A. . Component isolation for multi-component signal analysis using a non-parametric gaussian latent feature model. Mechanical Systems and Signal Processing, 2018, 103, 368-380.<br />
+(118) Chen, S., Dong, X., Xiong, Y., Peng, Z., Zhang, W.  Nonstationary Signal Denoising Using an Envelope-Tracking Filter. IEEE/ASME Transactions on Mechatronics, 2018, 23(4): 2004-2015.<br />
+(117) Wei, S., Peng, Z. K., Dong, X. J., & Zhang, W. M. A nonlinear subspace-prediction error method for identification of nonlinear vibrating structures. Nonlinear Dynamics, 2018, 91(3): 1605-1617.<br />
+(116) Dong, X., Chen, S., Xing, G., Peng, Z., Zhang, W., & Meng, G. Doppler Frequency Estimation by Parameterized Time-Frequency Transform and Phase Compensation Technique. IEEE Sensors Journal, 2018, 18: 3734-3744.<br />
+(115) Wen, B., Dong, X., Tian, X., Peng, Z., Zhang, W., & Wei, K. The power performance of an offshore floating wind turbine in platform pitching motion. Energy, 2018, 154: 508-521.<br />
+(114) Zhou, P., Dong, X., Chen, S., Peng, Z.,  Zhang, W. Parameterized model based Short-time chirp component decomposition[J]. Signal Processing, 2018, 145: 146-154.<br />
+(113) Xiong, Y., Peng, Z., Xing, G., Zhang, W.,  Meng, G. Accurate and Robust Displacement Measurement for FMCW Radar Vibration Monitoring. IEEE Sensors Journal, 2018, 18(3): 1131-1139.<br />
+(112) Cheng, C. M., Peng, Z. K., Dong, X. J., Zhang, W. M., & Meng, G. (2018). Nonlinear system identification using Kautz basis expansion-based Volterra–PARAFAC model. Nonlinear Dynamics, 94(3), 2277-2287.<br />
+(111) Wei, Y. M., Dong, X. J., Guo, P. F., Peng, Z. K., & Zhang, W. M. (2018). Enhanced Targeted Energy Transfer by Vibro Impact Cubic Nonlinear Energy Sink. International Journal of Applied Mechanics, 10(06), 1850061.<br />
+(110) Xiong, Y., Chen, S., Xing, G., Peng, Z., & Zhang, W. (2018). High-precision frequency estimation for FMCW radar applications based on parameterized de-alternating and modified ICCD. Measurement Science and Technology, 29(7), 075010.<br />
+(2017年度)<br />
+(109)Zou, Hong-Xiang; Zhang, Wen-Ming*; Li, Wen-Bo ; Gao, Qiu-Hua; Wei, Ke-Xiang; Peng, Zhi-Ke; Meng, Guang. Design, modeling and experimental investigation of a magnetically coupled flextensional rotation energy harvester. Smart Materials and Structures, 2017, 26: 115023 (14pp).<br />
+(108) Qiu-Hua Gao, Wen-Ming Zhang (*), Hong-Xiang Zou, Wen-Bo Li, Zhi-Ke Peng, Guang Meng. Design and Analysis of A Bistable Vibration Energy Harvester using Diamagnetic Levitation Mechanism.  IEEE Transactions on Magnetics, 2017, 53(10): 8700509.<br />
+(107) Xin-Qiang Li, Wen-Bo Li, Wen-Ming Zhang (*), Hong-Xiang Zou, Zhi-Ke Peng, Guang Meng. Magnetic force induced tristability for dielectric elastomer actuators. Smart Materials and Structures, 2017, 26(10): 105007(9p).<br />
+(106)Wen-Bo Li, Wen-Ming Zhang (*), Hong-Xiang Zou, Zhi-Ke Peng, Guang Meng. A Novel Variable Stiffness Mechanism for Dielectric Elastomer Actuators. Smart Materials and Structures, 2017, 26: 085033(11p).<br />
+(105)Zou Hong-Xiang, Zhang Wen-Ming(*), Li Wen-Bo, Wei Ke-Xiang, Gao Qiu-Hua, Peng Zhi-Ke, Meng Guang. Design and experimental investigation of a magnetically coupled vibration energy harvester using two inverted piezoelectric cantilever beams for rotational motion.Energy Conversion and Management, 2017, 148: 1391-1398.<br />
+(104)Yan Han, Zhang Wen-Ming(*), Jiang Hui-Ming, Hu Kai-Ming,Hong Fang-Jun, Peng Zhi-Ke, Meng Guang. A Measurement Criterion for Accurate Mass Detection Using Vibrating Suspended Microchannel Resonators. Journal of Sound and Vibration, 2017, 403: 1-20.<br />
+(103)Zou Hong-Xiang, Zhang Wen-Ming(*), Li Wen-Bo, Wei Ke-Xiang, Kai-Ming Hu, Peng Zhi-Ke, Meng Guang. A broadband compressive-mode vibration energy harvester enhanced by magnetic force intervention approach. Applied Physics Letters, 2017, 110(16): 502001.<br />
+(102)Xin-Ya Jiang, Zou Hong-Xiang, Zhang Wen-Ming(*). Design and analysis of a multi-step piezoelectric energy harvester using buckled beam driven by magnetic excitation. Energy Conversion and Management,2017, 145: 129-137.<br />
+(101)Yan Han, Zhang Wen-Ming(*), Jiang Hui-Ming, Hu Kai-Ming. Pull-In Effect of Suspended Microchannel Resonator Sensor Subjected to Electrostatic Actuation. Sensors, 2017, 17: 114.<br />
+(100)Wen, B., Tian, X., Dong, X., Peng, Z. K., Zhang, W. M. Influences of surge motion on the power and thrust characteristics of an offshore floating wind turbine. Energy, 2017, 141: 2054-2068.<br />
+(99)Xiong, Y., Chen, S., Dong, X., Peng, Z., Zhang, W.. Accurate Measurement in Doppler Radar Vital Sign Detection Based on Parameterized Demodulation. IEEE Transactions on Microwave Theory and Techniques, 2017, 65: 4483-4492.<br />
+(98)Xiong, Y., Chen, S., Xing, G., Peng, Z. K., Zhang, W. M.  Static clutter elimination for frequency-modulated continuous-wave radar displacement measurement based on phasor offset compensation. Electronics Letters, 2017, 53(22), 1491-1493.<br />
+(97)Shiqian Chen, Xingjian Dong, Zhike Peng, Wenming Zhang, Guang Meng. Nonlinear Chirp Mode Decomposition: A Variational Method. IEEE Transactions on Signal Processing, 2017, 65: 6024-6037.<br />
+(96) Shiqian Chen, Xingjian Dong, Guanpei Xing, Zhike Peng, Wenming Zhang, Guang Meng. Separation of Overlapped Non-Stationary Signals by Ridge Path Regrouping and Intrinsic Chirp Component Decomposition. IEEE Sensors Journal, 2017, 17: 5994-6005.<br />
+(95)XZ Li, XJ Dong, ZK Peng, WM Zhang, G Meng. Local variation detection in MDOF system using wavelet based transmissibility and its application in cracked beam. Journal of Vibration and Control,2017,23(14): 2307-2327.<br />
+(94)Chen SQ, Dong XJ, Yhang Y, Zhang WM, Peng ZK, Meng G. Chirplet Path Fusion for the Analysis of Time-Varying Frequency Modulated Signals. IEEE Transactions on Industrial Electronics, 2017, 64(2): 1370-1380.<br />
+(93)Chen SQ, Peng ZK, Yang Y, Dong XJ, Zhang WM. Intrinsic chirp component decomposition by using Fourier Series representation. Signal Processing, 2017, 137: 319-327.<br />
+(92)Wei, Y. M., Peng, Z. K., Dong, X. J., Zhang, W. M., Meng, G. Mechanism of optimal targeted energy transfer. ASME Journal of Applied Mechanics, 2017, 84(1): 011007.<br />
+(91)Zhang, M. W., Wei, S., Peng, Z. K., Dong, X. J., Zhang, W. M. A two-stage time domain subspace method for identification of nonlinear vibrating structures. International Journal of Mechanical Sciences, 2017, 120: 81-90.<br />
+(90)Cheng CM, Peng ZK, Zhang WM, Meng G. Volterra-series-based nonlinear system modeling and its engineering applications: A state-of-the-art review. Mechanical Systems and Signal Processing, 2017, 87: 340-364.<br />
+(2016年度)<br />
+(89)Li Wen-Bo, Zhang Wen-Ming (*), Zou Hong-Xiang, Peng Zhi-Ke, Meng Guang. Asymmetry bistability for a coupled dielectric elastomer minimum energy structure. Smart Materials and Structures, 2016, 25: 115023 (10pp).<br />
+(88)Zou Hong-Xiang, Zhang Wen-Ming(*), Wei Ke-Xiang, Li Wen-Bo, Peng Zhi-Ke, Meng Guang. A Compressive-mode Wideband Vibration Energy Harvester Using a Combination of Bistable and Flextensional Mechanisms. ASME Journal of Applied Mechanics, 2016, 83(12): 121005.<br />
+(87)Hu Kai-Ming, Zhang Wen-Ming (*), Shi Xi, Yan Han, Peng Zhi-Ke, Meng Guang. Adsorption-induced surface effects on the dynamical characteristics of micromechanical resonant sensors for in-situ real-time detection. ASME Journal of Applied Mechanics, 2016, 83(8), 081009.<br />
+(86)Zou Hong-Xiang, Zhang Wen-Ming(*), Wei Ke-Xiang, Li Wen-Bo, PengZhi-Ke, Meng Guang. Design and Analysis of a Piezoelectric Vibration Energy Harvester Using Rolling Mechanism. ASME Journal of Vibration and Acoustics, 2016, 138(5): 051007.<br />
+(85)Hu Kai-Ming, Zhang Wen-Ming (*), Peng Zhi-Ke, Meng Guang. Transverse Vibrations of Mixed-Mode Cracked Nanobeams with Surface Effect. ASME Journal of Vibration and Acoustics. 2016,138: 011020.<br />
+(84)Zhang Wen-Ming(*), Yan Han, Jiang Hui-Ming, Hu Kai-Ming, Peng Zhi-Ke, Meng, Guang. Dynamics of Suspended Microchannel Resonators Conveying Opposite Internal Fluid Flow: Stability, Frequency Shift and Energy Dissipation. Journal of Sound and Vibration,2016, 368: 103-120.<br />
+(83)Yan Han, Zhang Wen-Ming(*), Jiang Hui-Ming, Hu Kai-Ming, Peng Zhi-Ke, Meng Guang. Dynamical characteristics of fluid-conveying microbeams actuated by electrostatic force. Microfluidics and Nanofluidics, 2016, 20: 137.<br />
+(82)Zhang Wen-Ming(*), Hu Kai-Ming, Yang Bin, Peng Zhi-Ke, Meng Guang.Effects of surface relaxation and reconstruction on the vibration characteristics of nanobeams.  Journal of Physics D: Applied Physics, 2016,49: 165304<br />
+(81)Zhang Wen-Ming (*), Yan Han, Peng Zhi-Ke, Meng Guang. Finite Volume Modeling of Gas Flow in Microbearing with Rough Surface Topography. Tribology Transactions,2016, 59(1): 99-107.<br />
+(80)Yang, Y., Peng, Z. K., Zhang, W. M., Meng, G., Lang, Z. Q. Dispersion analysis for broadband guided wave using generalized warblet transform. Journal of Sound and Vibration, 2016, 367: 22-36.<br />
+(79)Yang Y, Peng Z K, Dong X J, Zhang WM, Meng G. Nonlinear time-varying vibration system identification using parametric time–frequency transform with spline kernel. Nonlinear Dynamics, 2016, 85: 1679-1694.<br />
+(78)Deng Y, Cheng CM, Yang Y, Peng ZK, Yang WX, Zhang WM. Parametric Identification of Nonlinear Vibration Systems Via Polynomial Chirplet Transform. ASME Journal of Vibration and Acoustics, 138(5), 051014.<br />
+(77)Shiqian Chen, Yang Yang, Kexiang Wei, Xingjian Dong, Zhike Peng, Wenming Zhang. Time-Varying Frequency-Modulated Component Extraction Based on Parameterized Demodulation and Singular Value Decomposition. IEEE Transactions on Instrumentation and Measurement, 2016, 65(2): 276-285.<br />
+(76)Zuo-Yang Zhong, Hai-Lian Zhang, Wen-Ming Zhang, Yan Liu. Dynamic analysis of hyperbolic waveguide resonator driven by optical gradient force. Optical Engineering, 2016, 55(8): 081313.<br />
+(75)Zuo-Yang Zhong, Jian-Ping Zhou, Hai-Lian Zhang, Wen-Ming Zhang, Guang Meng. Thermoelastic damping in fluid-conveying microresonators. International Journal of Heat and Mass Transfer,2016, 93: 431-440.<br />
+(74)Min Lei, Guang Meng, Wenming Zhang, Joshua Wade, Nilanjan Sarkar. Symplectic Entropy as a Novel Measure for Complex Systems. Entropy 2016, 18, 412.<br />
+(73)M. W. Zhang, Z. K. Peng, X. J. Dong, W. M. Zhang, G. Meng. Location identification of nonlinearities in MDOF systems through order determination of state-space models. Nonlinear Dynamics, 2016, 84: 1837-1852.<br />
+(72)Cheng C M, Peng Z K, Zhang W M, et al. A novel approach for identification of cascade of Hammerstein model. Nonlinear Dynamics, 2016, 86: 513–522.<br />
+(2015年度) <br />
+(71)W. M. Zhang*, K. M. Hu, Z. K. Peng, G. Meng. Tunable Micro- and Nanomechanical Resonators. Sensors, 2015, 15, 26478-26566. <br />
+(70)Z. Y. Zhong, W. M. Zhang*, G. Meng, M. Y. Wang. Thermoelastic damping in the size-dependent microplate resonators based on modified couple stress theory. IEEE Journal Microelectromechanical Systems, 2015, 24(2): 431-445. <br />
+(69)H. Yan, W. M. Zhang*, Z. K. Peng, G. Meng. Effect of three-dimensional surface topography on gas flow in rough micronozzles. ASME Journal of Fluids Engineering, 2015, 137: 051202. <br />
+(68)K. M. Hu, W. M. Zhang*,X. J. Dong, Z. K. Peng, G. Meng. Scale effect on tension-induced intermodal coupling in nanomechanical resonators. ASME Journal of Vibration and Acoustics, 2015, 137(2): 021008. <br />
+(67)H. Yan, W. M. Zhang*, Z. K. Peng, G. Meng. Effect of random surface topography on the gaseous flow in microtubes with an extended slip model. Microfluidics and Nanofluidics,2015, 18: 897-910. <br />
+(66)H. Zhou, W. M. Zhang*, Z. K. Peng, G. Meng.Dynamic characteristics of electrostatically actuated microbeams with slant crack. Mathematical Problems in Engineering, vol. 2015, Article ID 208065, 13 pages. <br />
+(65)S. Zhang, W. M. Zhang*, Z. K. Peng, G. Meng. Dynamic characteristics of electrostatically actuated shape optimized variable geometry microbeam. Shock and Vibration, Volume 2015, Article ID 867171, 15 pages. <br />
+(64)Zhang, M. W., Peng, Z. K.,Dong, X. J., Zhang, W. M., Meng, G. A forward selection reverse path method for spatial location identification of nonlinearities in MDOF systems. Nonlinear Dynamics, 2015, 82(3): 1379-1391. <br />
+(63)J. C. Lan, X. J. Dong, Z. K. Peng, W. M. Zhang, G. Meng. Uncertain eigenvalue analysis by sparse grid stochastic collocation method. Acta Mechanica Sinica, 2015,31(4): 545-557. <br />
+(62)C. M. Cheng, Z. K. Peng, X. J. Dong, W. M. Zhang, G.Meng. A novel damage detection approach by using Volterra kernel functions based analysis.Journal of the Franklin Institute, 2015, 352(8): 3098-3112. <br />
+(61)Y. Yang, X. J. Dong, Z. K. Peng, W. M. Zhang, G. Meng. Component extraction for non-stationary multi-component signal using parameterized de-chirping and band-pass filter. IEEE Signal Processing Letters, 2015, 22(9): 1373-1377. <br />
+(60)Y. Yang, X. J. Dong, Z. K. Peng, W. M. Zhang, G. Meng.Vibration signal analysis using parameterized time-frequency method for features extraction of varying-speed rotary machinery. Journal of Sound Vibration, 2015, 335: 350-366. <br />
+(2014年度) <br />
+(59)W. M. Zhang*, H. Yan, Z. K. Peng, G. Meng. Electrostatic pull-in instability in MEMS/ NEMS-A review. Sensors and Actuators A: Physical, 2014, 214: 187-218. <br />
+(58)Z. Y. Zhong, W. M. Zhang*, G. Meng, M. Y. Wang.Thermoelastic damping in opto-waveguide resonators with the bolometric effect Physics Review E 2014, 89: 063203 <br />
+(57)Z. Y. Zhong, W. M. Zhang*, G. Meng.Frequency shift of nano-waveguides resonator driven by tunable optical gradient force. Journal of the Optical Society of America B, 2014, 31(1): 96-104. <br />
+(56)K. M. Hu, W. M. Zhang*, Z. Y. Zhong, Z. K. Peng, G. Meng. Effect of surface layer thickness on buckling and vibration of nonlocal nanowires. Physics Letter A, 2014, 378(7-8): 650-654. <br />
+(55)Y. Liu, W. M. Zhang*, Z. Y. Zhong, Z. K. Peng, G. Meng. Nonlinear dynamic analysis of nano-resonator driven by optical gradient force. Acta Phys. Sin., 2014,63(2): 026201. <br />
+(54)Y. Yang, Z. K. Peng, X. J. Dong, W. M. Zhang, G. Meng. Application of parameterized time-frequency analysis on multicomponent frequency modulated signals. IEEE Transactions on Instrumentation and Measurement,2014, 63: 3169-3180. <br />
+(53)C. M. Cheng, X. J. Dong, Z. K. Peng, W. M. Zhang, G. Meng. Wavelet basis expansion-based spatio-temporal Volterra kernels identification for nonlinear distributed parameter systems. Nonlinear Dynamics, 2014, 78(2): 1179-1192. <br />
+(52)C. M. Cheng, Z. K. Peng, X. J. Dong, W. M. Zhang, G. Meng. Locating non-linear components in two dimensional periodic structures based on NOFRFs. International Journal of Non-Linear Mechanics, 2014, 67: 198-208. <br />
+(51)X. J. Dong, Z. K. Peng, W. M. Zhang, G. Meng. Connection between Volterra Series and Perturbation Method in Nonlinear Systems Analysis. Acta Mechanica Sincia, 2014, 30: 600-606. <br />
+(50)C. M. Cheng, Z. K. Peng, W. M. Zhang, G. Meng.Wavelet basis expansion-based Volterra kernel function identification through multilevel excitations. Nonlinear Dynamics, 2014, 76: 985-999. <br />
+(49)X. J. Dong, Z. K. Peng, W. M. Zhang, H. X. Hua, G. Meng. An efficient spectral element model with electric DOFs for the static and dynamic analysis of a piezoelectric bimorph.Mathematical Problems in Engineering, 2014, Article ID 425317, 9 pages. <br />
+(48)X. J. Dong, Z. K. Peng, W. M. Zhang, H. X. Hua, G. Meng. Research on Spillover Effects for Vibration Control of Piezoelectric Smart Structures by ANSYS. Mathematical Problems in Engineering, Volume 2014 (2014), Article ID 870940. <br />
+(47)Y. Yang, Z. K. Peng, W. M. Zhang, G. Meng. Frequency-varying group delay estimation using frequency domain polynomial chirplet transform. Mechanical Systems and Signal Processing, 2014, 46: 146-162. <br />
+(46)Bai HY, Liu X, Li HG, Zhang WM, Meng G, Li M, Wang X. Nonlinear dynamic characteristics of a large-scale tilting pad journal bearing-rotor system. Journal of Vibroengineering, 2014, 16(8): 4045-4064. <br />
+(45) Y. Yang, Z. K. Peng, X. J. Dong, W. M. Zhang, G. Meng. General Parameterized Time-Frequency Transform. IEEE Transactions on Signal Processing, 2014, 62(11): 2751-2764. <br />
+（2013年度） <br />
+(44)W. M. Zhang*, G. Meng, Z.K. Peng. Gaseous slip flow in micro-bearings with random rough surface.International Journal of Mechanical Sciences, 2013, 68: 105-113. <br />
+(43)Z. Y. Zhong, W. M. Zhang*, G. Meng, J.Wu. Inclination effects on the frequency tuning of comb-driven resonators. IEEE Journal of Microelectromechanical Systems, 2013,22(4):865-875. <br />
+(42)Z. Y. Zhong, W. M. Zhang*, G. Meng. Dynamic Characteristics of Micro-Beams Considering the Effect of Flexible Supports. Sensors,2013, 13(12), 15880-15897. <br />
+(41)H. Yan, W. M. Zhang*, K. M. Hu, Y. Liu, G. Meng, Investigation on characteristics of flow in microchannels with random surface roughness. Acta Phys. Sin., 2013,62(17): 174701. <br />
+(40)Y. Yang, W. M. Zhang*, Z. K. Peng, G. Meng. Multicomponent Signal Analysis Based on Polynomial Chirplet Transform. IEEE Transactions on Industrial Electronics, 2013, 60(9): 3948-3956. <br />
+(39)Z.K. Peng, W. M. Zhang, B.T. Yang,G. Meng, F. L. Chu. The parametric characteristic of bispectrum for nonlinear systems subjected to Gaussian input. Mechanical Systems and Signal Processing, 2013, 36: 456-470. <br />
+(38)X.J.Dong,Z. K. Peng,W. M. Zhang, G. Meng, et al. Parametric characteristic of the random vibration response of nonlinear systems. Acta Mechanica Sinica, 2013, 29(2): 267-283. <br />
+（2012年度） <br />
+(37)W. M. Zhang, G. Meng, X. Y. Wei. A review on slip models for gas microflows. Microfluidics and Nanofluidics, 2012, 13: 845-882.<br />
+(36)W. M. Zhang, G. Meng, X. Y. Wei, Z. K. Peng. Slip flow and heat transfer in microbearings with fractal surface topographies. International Journal of Heat and Mass Transfer, 2012,55: 7223-7233. <br />
+(35)W. M. Zhang, G. Meng, Z. K. Peng, D. Chen. Coupled nonlinear effects of random surface roughness and rarefaction on slip flow in ultra-thin film gas bearing lubrication. ASME Journal of Tribology, 2012, 134: 024502. <br />
+(34)W. M. Zhang, G. Meng, X. Y. Wei, Z. K. Peng. Effect of surface roughness on rarefied-gas heat transfer in microbearings. Physics Letter A, 2012, 376： 789-794. <br />
+(33)Z.Y. Zhong, S. J. Liu, W.M. Zhang*, G. Meng. Dynamics of carbon nanotubes mass detection involving phonon-tunneling dissipation.Micro & Nano Letter, 2012,7: 1246-1250. <br />
+(32)K. X. Wei, W. M. Zhang, P. Xia, Y. Liu. Nonlinear dynamics of an electrorheological sandwich beam with rotary oscillation. Journal of Applied Mathematics, 2012,(2012), Article ID 659872, doi:10.1155/2012/659872. <br />
+(31)Z. K. Peng, G. Meng, Z. Q. Lang, W. M. Zhang, F. L. Chu. Study of the effects of cubic nonlinear damping on vibration isolations using Harmonic Balance Method. International Journal of Non-linear Mechanics,2012, 47:1073–1080 <br />
+(30)Z. K. Peng, W. M. Zhang, Z. Q. Lang, G. Meng, F. L. Chu. Time-frequency data fusion technique with application to vibration signal analysis. Mechanical Systems and Signal Processing,2012,29: 164-173. <br />
+(29)W. M. Zhang, G. Meng,K. X. Wei. Numerical prediction of surface roughness effect on slip flow in gas-lubricated journal microbearings. Tribology Tranactions, 2012,55:71-76. <br />
+(28)Y. Yang, Z. K. Peng, G. Meng, W. M. Zhang. Characterize highly oscillating frequency modulation using generalized Warblet transform. Mechanical Systems and Signal Processing, 2012, 26: 128-140. <br />
+(27)Y. Yang, Z. K. Peng, G. Meng, W. M. Zhang. Spline-Kernelled chirplet transform for the analysis of signals with time-varying frquency and its application. IEEE Transactions on Industrial Electronics, 2012, 59(3): 1612-1621. <br />
+（2011年度） <br />
+(26)W. M. Zhang, G. Meng, Z. K. Peng. Nonlinear dynamic analysis of atomic force microscopy under bounded noise parametric excitation. IEEE/ASME Transactions on Mechatronics, 2011, 16(6): 1063-1072. <br />
+(25)Z. K. Peng, G. Meng, F. L. Chu, Z. Q. Lang, W. M. Zhang, Y. Yang. Polynomial chirplet transform with application to instantaneous frequency estimation. IEEE Transaction on Instrumentation and Measurement, 2011, 60(9): 3222-3229. <br />
+(24)W. M. Zhang, O. Tabata, T. Tsuchiya, G. Meng. Noise-induced chaos in the electrostatically actuated MEMS resonators.Physics Letters A, 2011, 375: 2903-2910. <br />
+(23)W. M. Zhang, J. B. Zhou, G. Meng. Performance and stability analysis of gas-lubricated journal bearings in MEMS. Tribology International, 2011, 44: 887-897. <br />
+（2010年度） <br />
+(22)W. M. Zhang, G. Meng, K. X. Wei. Nonlinear dynamics of the electrostatically actuated MEMS resonators under two-frequency parametric and external excitations. Shock and Vibration. 2010, 17(4): 759-770. <br />
+(21)W. M. Zhang, G. Meng, Z. K. Peng.Random surface roughness effect on slider microbearing lubrication. Micro & Nano Letters, 2010, 5(5): 347-350. <br />
+（2009年度） <br />
+(20)W. M. Zhang, G. Meng. Property analysis of the rough slider bearings in micromotors for MEMS applications. IEEE/ASME Transaction on Mechatronics, 2009, 44(1): 465-473. <br />
+(19)W. M. Zhang, G. Meng, J. B. Zhou, J. Y. Chen. Slip model for the molecular gas film lubrication of the slider bearing in a micromotor. Microsystem Technologies, 2009, 15: 953-961. <br />
+(18)W. M. Zhang, G. Meng, J. B. Zhou, J. Y. Chen. Nonlinear dynamics and chaos of microcantilever-based TM-AFM with squeeze film damping effects. Sensors, 2009, 9(5): 3854-3874. <br />
+(17)G. Meng, W. M. Zhang, H. Huang, H. G. Li, D. Chen. Micro-rotor dynamics for micro-electro-mechanical systems (MEMS). Chaos, Solitons and Fractals, 2009, 40(2): 538-562. <br />
+(16)J. Y. Chen, J. B. Zhou, G. Meng, W. M. Zhang. Evaluation of eddy-current effects on diamagnetic bearings for micorsystems. IEEE Transactions on Industrial Electronics, 2009, 56(4): 964-972. <br />
+(15)J. B. Zhou, J. Y. Chen, G. Meng, W. M. Zhang. Scale dependent analysis of sliding wear between the bushing and the ground plane in micromotors. Archive of Applied Mechanics, 2009, 79: 301-310. <br />
+(14)J. B. Zhou, J. Y. Chen, G. Meng, W. M. Zhang. Bifurcation analysis of ultra-short self-acting gas journal bearings for MEMS. IEEE Transactions on Industrial Electronics, 2009, 56: 3188-3194. <br />
+（2008年度） <br />
+(13)W. M. Zhang, G. Meng, D. Chen, J. B. Zhou, J. Y. Chen. Nonlinear dynamics of a rub-impact micro-rotor system with scale-dependent friction model. Journal of Sound and Vibration, 2008, 309(3-5): 756-777. <br />
+(12)W. M. Zhang, G. Meng, H. Huang, J. B. Zhou, J. Y. Chen. Characteristics analysis and dynamic responses of micro gas-lubricated journal bearings with a new slip model. Journal of Physics D: Applied Physics, 2008, 41(15): 155305 (16pp). <br />
+(11)K. X. Wei, G. Meng, W. M. Zhang. Experimental investigation on vibration characteristics of sandwich beams with magnetorheological elastomers.Journal of Central South University of Technology, 2008, 15: 239-242. <br />
+（2007年度） <br />
+(10)W. M. Zhang, G. Meng. Nonlinear dynamic analysis of electrostatically actuated resonant MEMS sensors under parametric excitation. IEEE Sensors Journal, 2007, 7(3): 370-380. <br />
+(9)K. X. Wei, G. Meng, W. M. Zhang, S. Zhou. Vibration characteristics of rotating sandwich beams filled with electrorheological fluids. Journal of Intelligent Material Systems and Structures, 2007, 18(11): 1165-1173. <br />
+(8)W. M. Zhang, G. Meng, D. Chen. Stability, nonlinearity and reliability of electrostatically actuated MEMS devices. Sensors, 2007, 7(5): 760-796. <br />
+（2006年度） <br />
+(7)W. M. Zhang, G. Meng. Numerical simulation of sliding wear between the rotor bushing and ground plane in micromotors. Sensors and Actuators A: Physical, 2006, 126(1):15-24. <br />
+(6)W. M. Zhang, G. Meng. Stability, bifurcation and chaos analyses of a high-speed micro-rotor system with rub-impact. Sensors and Actuators A: Physical, 2006, 127(1): 163-178. <br />
+(5)W. M. Zhang, G. Meng, H. G. Li. Adaptive vibration control of micro-cantilever beam with piezoelectric actuator in MEMS. International Journal of Advanced Manufacturing Technology, 2006, 28(3-4): 322-327. <br />
+(4)W. M. Zhang, G. Meng. Friction and wear study of the hemispherical rotor bushing in a variable capacitance micromotor. Microsystem Technologies, 2006, 12(4): 283-292. <br />
+（2005年度） <br />
+(3)W. M. Zhang, G. Meng, H. G. Li. Electrostatic micromotor and its reliability. Microelectronics Reliability, 2005, 45(7-8): 1230-1242. <br />
+(2)W. M. Zhang, G. Meng. Contact dynamics between the rotor and bearing hub in a micromotor. Microsystem Technologies, 2005, 11(6): 438–443. <br />
+(1)W. M. Zhang, G. Meng. Nonlinear dynamical system of micro-cantilever under combined parametric and forcing excitations in MEMS. Sensors and Actuators A: Physical, 2005, 119(2): 291-299. <br />
+<br />
+【中文期刊论文】 <br />
+[19] 闫寒, 张文明. 微纳通道谐振器测量与表征中的动力学问题研究. 力学进展，2019, 49: 201903. 【特邀综述】<br />
+[18] 胡璐, 闫寒, 张文明, 彭志科, 孟光. 黏性流体环境下 V 型悬臂梁结构流固耦合振动特性研究. 力学学报, 2018, 50(3): 643-653.<br />
+[17] 张文明, 闫寒, 彭志科, 孟光. 微纳机械谐振器能量耗散机理研究进展. 科学通报, 2017, 62(19): 2077-2093.【特邀综述】 <br />
+[16] 李源霜, 李汶柏, 张文明. 大型椭圆振动筛空心裂纹转轴非线性振动特性分析. 噪声与振动控制, 2016, 36(2): 46-51. <br />
+[15] 张厦, 张文明. 微机械谐振器可变锚点结构能量耗散特性分析. 噪声与振动控制, 2015, 35(5): 39-42. <br />
+[14] 刘素娟, 齐书浩, 张文明. 静电驱动裂纹微悬臂梁结构振动特性分析. 振动与冲击, 2013, 32(17): 41-45. <br />
+[13] 齐书浩, 刘素娟, 张文明. 低雷诺数下微型四旋翼飞行器气动和振动特性分析. 噪声与振动控制, 2013, 33(5): 53-57. <br />
+[12] 彭志科, 孟光, 张文明. Volterra级数与摄动法的内在关系研究. 中国科学 物理学力学天文学 (中文版), 2013, 43: 494-499. <br />
+[11] 邓杨, 彭志科, 杨扬, 孟光. 基于参数化时频分析的非线性振动系统参数辨识. 力学学报, 2013, 45(6): 992-996. <br />
+[10] 张文明, 孟光. 随机表面粗糙度对 MEMS 径向气体轴承性能的影响. 振动工程学报, 2012, 25(1): 60-63. <br />
+[9] 魏克湘, 孟光, 张文明. 基础简谐激励下匀速旋转运动电流变夹层梁的振动稳定性. 振动与冲击, 2011, 30(4): 42-46. <br />
+[8] 张文明 孟光 魏克湘. 参数激励下静电驱动微机电系统动力特性研究. 力学学报, 2009, 41(2): 282-288. <br />
+[7] 张文明, 孟光, 周健斌, 陈杰宇. 参数激励下静电驱动MEMS共振传感器的非线性动力特性研究. 力学季刊, 2009, 30: 44-48. <br />
+[6] 张文明, 孟光, 陈迪. 微转子系统径向气体轴承特性. 机械工程学报, 2008, 44(5): 25-33. <br />
+[5] 张文明, 孟光, 陈迪. 微型旋转机械轴承研究进展. 振动与冲击, 2008, 27(5): 27-31. <br />
+[4] 周健斌, 孟光, 张文明. 微机电系统径向气体轴承特性研究. 振动与冲击, 2007, 26(9): 30-33. <br />
+[3] 张文明, 孟光. 超高速微转子系统磨损特性的研究. 摩擦学学报, 2006, 26(2): 155-158. <br />
+[2] 张文明, 孟光. 微机电系统磨损特性研究进展. 摩擦学学报, 2005, 25(5): 489-494. <br />
+[1] 张文明, 孟光. 静电微电机微转子接触动力学特性分析. 力学学报, 2005, 37(6): 756-763. </div>
+            </li>
+                                    <li>
+                <h2>教学工作</h2>
+                <div class="txtk">1、《机械动力学与振动学》 本科生，48学时，3学分 <br />
+2、《静力学与动力学基础》本科生，48学时，3学分<br />
+3、《机械工程前沿》 硕士生，36学时，2学分 <br />
+4、《振动冲击噪声现代理论》 博士生，54学时，3学分 <br />
+5、《转子动力学》研究生，48学时，3学分 <br />
+</div>
+            </li>
+                                    <li>
+                <h2>软件版权登记及专利</h2>
+                <div class="txtk">【国家发明专利】<br />
+[49] 张文明，郭欣宇，闫寒；舱门展开力矩自动测量装置； 2019.11.13<br />
+[48] 郭欣宇，张文明；真空吸附式锁定关节的气动软体抓手； 2019.11.13<br />
+[47] 郭欣宇，张文明，李汶柏；弯曲型变刚度自传感式气动软体驱动器；2019.11.13<br />
+[46] 李支康，赵立波，李杰，郭帅帅，胡开明，张文明，徐廷中，赵一鹤，刘子晨，蒋庄德；一种电极形状调控的高超声波收发性能CMUTs；2019106972828；2019.11.12<br />
+[45] 张文明，高秋华；海尔贝克阵列式磁悬浮密度测量的方法及装置；2019105240165；2019.09.27<br />
+[44] 邹鸿翔，赵林川，张文明，等；具有频率和位移放大作用的小型风能采集器；2019103740373；2019.08.02<br />
+[43] 魏克湘，邹鸿翔，白泉，张文明，等；一种智慧型海上风电运维船结构；2019105588120；2019.09.17<br />
+[42] 邹鸿翔，魏克湘，赵林川，张文明，等；磁场耦合波浪能量采集器；2019.08.09<br />
+[41] 彭勃，张文明，胡开明，闫寒；一种大量程范围的弱耦合谐振式微加速度计；2019.05.17<br />
+[40] 张文明，李汶柏，郭欣宇；自锁式刚软耦合机械抓手；2019.04.25；2019.06.21<br />
+[39] 郭欣宇，张文明，李汶柏；变刚度内骨骼刚软耦合机械手指；201811338349.0；2019.03.19<br />
+[38] 张文明，邹鸿翔，颜格，王森；基于PVC Gel的自反馈三稳态变刚度微振动隔振装置；201810934916.2；2018.12.14<br />
+[37] 张文明，李汶柏，闫寒；基于人工肌肉的柔性抓手；201810907666.3；2018.11.23<br />
+[36] 李汶柏，张文明，闫寒；基于人工肌肉的括约肌假体；201810907667.8；2018.12.21<br />
+[35] 李汶柏，张文明; 基于介电弹性体的自主滚动软体机器人；2018102827017；2018.09.11<br />
+[34] 李汶柏，张文明; 基于介电弹性体的可调刚度支撑装置; 2018102826940; 2018.09.07<br />
+[33] 李汶柏，张文明，赵云花；介电弹性体主动隔振空气弹簧；201810282681.3；2018.09.04<br />
+[32] 赵林川，张文明，邹鸿翔；一种面内压电振动能量采集器；2018100149442；2018.06.01；授权公告日：2019.07.26<br />
+[31] 刘丰瑞，张文明，胡璐；磁力边界约束增强的宽速域压电式风能采集器；201710810724.6；2018.01.31<br />
+[30] 颜格，张文明, 李汶柏；多向蠕动软体机器人；201710796156.9；2018.02.16<br />
+[29] 胡开明，张文明，闫寒；基于褶皱形成原理的石墨烯力学性能同步表征实现方法；201710767131.6；2018.01.31<br />
+[28] 赵林川，张文明，邹鸿翔；宽速度域磁力耦合压电风能采集器；201710636885.8；2017.12.08；授权公告日：2019.08.23<br />
+[27] 张文明, 李汶柏, 邹鸿翔, 闫寒；介电弹性体机械腕关节；201710493794.3；2017.09.08<br />
+[26] 高秋华, 张文明, 胡璐, 邹鸿翔；基于抗磁悬浮原理的离心式密度测量装置及方法；201710553327.5；2017.12.15；授权公告日：2019.05.22<br />
+[25] 李汶柏，张文明, 赵林川, 刘丰瑞；双向多稳态介电弹性体驱动器；ZL201710497155.4；授权公告日：2019.01.10<br />
+[24] 李汶柏, 张文明, 颜格, 邹鸿翔；冲击增强型介电弹性体振动器；ZL201710578234.8; 申请日：2017.11.21；授权公告日：2019.05.21<br />
+[23] 张文明，邹鸿翔，魏新生，王森，赵林川，颜格；惯性执行机构刚柔耦合微振动隔振装置；ZL201710223439.4；授权公告日：2018.06.21<br />
+[22] 邹鸿翔，胡璐，张文明；基于仿生鱼的流致振动能量采集装置；ZL201710238735.1；授权公告日：2018.06.21<br />
+[21] 邹鸿翔，李汶柏，张文明，魏克湘，孟光；多向磁拉式双稳态振动能量俘获器；ZL201710034795.1；授权公告日：2018.07.02<br />
+[20] 李鑫强，张文明，李汶柏；磁力式多稳态介电弹性体换能器；授权专利号：ZL201611049968.9；授权公告日：2018.05.25<br />
+[19] 高秋华，张文明，邹鸿翔；抗磁悬浮双稳态振动能量俘获器；ZL201611019835.7；授权公告日：2018.11.26<br />
+[18] 张文明，邹鸿翔，孟光；振幅放大叠加振动能量采集装置；授权专利号：ZL201611024248.7；授权公告日：2018.05.25<br />
+[17] 张文明，邹鸿翔，孟光；基于振动加载装置的振动测试系统及其方法；201610144916.3；2016.05.25<br />
+[16] 邹鸿翔，李源霜，张文明，汪炜涛，孟光；多频耦合振动能量俘获器；2015107075802；2015.10.27<br />
+[15] 张文明，邹鸿翔，孟光；半主动调频振动能量俘获器；2015107333310；2015.11.02；授权号：CN105207524A<br />
+[14] 李汶柏，张文明，邹鸿翔，孟光；双稳态电气连接转换装置；201510101033X；2015.03.09；授权号：CN104658801B<br />
+[13] 李汶柏，张文明，邹鸿翔；条形工件表面缺陷全方位视觉在线检测系统；2015101014379；2015.03.09；授权号：CN104634791B<br />
+[12] 邹鸿翔，张文明，孟光，魏克湘；自发电防雾霾空气过滤装置；2015100424412；2015.01.28；授权号：CN104588211B<br />
+[11] 邹鸿翔，张文明，魏克湘，孟光；基于双稳态的无接触磁力式振动能量俘获器；2015100539045；授权号：CN104578911B<br />
+[10] 蒋新雅，张文明，邹鸿翔，孟光；压电俘能与主动减振集成装置；2015100539257；2015.02.02；授权号：CN104578912B<br />
+[9] 李汶柏，张文明，邹鸿翔；基于双稳态结构的电子设备姿态调整器；2015100265929；2015.01.19；授权号：CN104536534B<br />
+[8] 邹鸿翔，张文明，魏克湘，胡开明，闫寒；一种自供能智能运动鞋；2014107841722；2014.12.27；授权号：CN104489996B<br />
+[7] 邹鸿翔，张文明，魏克湘；一种用于汽车悬架的滚动压迫俘能装置；2014107195871；2014.12.01<br />
+[6] 刘付远, 张文明, 闫寒. 一种环隙式纳米砂磨机；CN104971799A；2014.04.03<br />
+[5] 闫寒，张文明；复杂几何边界下微流体器件中气体滑移流动的计算方法；2014107198719；2014.12.01；授权号：CN104376183B<br />
+[4] 仲作阳，孟光，张文明，荆建平，李明，何淑芬；基于Modelica语言的泵车臂架系统仿真建模方法；2011104495368；2011.12.29<br />
+[3] 魏克湘，邹鸿翔，杜荣华，张文明；自供能智能减振器；ZL2013104546015；申请时间：2013.09.29，授权公布日：2015.07.29<br />
+[2] 魏克湘，孟光，张文明；基于挤压式受力的磁流变弹性体主被动一体减振器；ZL2008100361521；授权公布日：2009.10.21<br />
+[1] 张文明，孟光，李鸿光，陈迪，周键斌；非接触式微转子振动位移的激光测量方法；ZL2006100268434；授权公布日：2009.08.05<br />
+<br />
+【软件版权登记】<br />
+1、泵车负载敏感型比例多路滑阀仿真建模软件1.0（计算机软件，No.00109913，2011年）<br />
+2、泵车臂架系统动力学建模仿真软件（计算机软件，No.00109864，2011年）<br />
+3、汽车起重机变幅机构动力学建模仿真软件1.0（No.00109860 ,2011年）</div>
+            </li>
+                                    <li>
+                <h2>学术兼职</h2>
+                <div class="txtk">【期刊编委】 <br />
+国际期刊《Active and Passive Electronic Components》，编委 <br />
+国际期刊《Sensors & Transducers Journal》，编委 <br />
+国际期刊《Journal of Sensor Technology》，编委 <br />
+中文期刊《力学研究》，编委 <br />
+中文期刊《动力学与控制学报》，编委 <br />
+<br />
+【学术团体】 <br />
+中国微米纳米技术学会微纳执行器与微系统分会，副理事长<br />
+中国机械工程学会微纳制造技术分会，常务委员<br />
+中国力学学会青年工作委员会，委员 <br />
+中国振动工程学会非线性振动专业委员会，委员、副秘书长 <br />
+中国振动工程学会包装动力学专业委员会青年分会，副主任 <br />
+中国振动工程学会转子动力学专业委员会，常务理事 <br />
+上海市力学学会动力学与控制专业委员会，委员 <br />
+ASME结构与系统动力学及控制（DCSS）技术委员会，委员<br />
+美国电气和电子工程师协会(IEEE)，会员 <br />
+中国机械工程学会，高级会员<br />
+汽车动力与传动系统湖南省重点实验室学术委员会，委员</div>
+            </li>
+                                    <li>
+                <h2>荣誉奖励</h2>
+                <div class="txtk">【人才计划】<br />
+上海市青年优秀学术带头人（2019）<br />
+ 国家创新人才推进计划“中青年科技创新领军人才”（2018）<br />
+国家杰出青年科学基金获得者（2016）<br />
+教育部霍英东青年教师基金获得者（2014） <br />
+上海市曙光学者（2014） <br />
+国家优秀青年科学基金获得者（2013） <br />
+国家“万人计划”-中组部青年拔尖人才（2013） <br />
+上海市青年科技启明星计划（2011） <br />
+<br />
+【奖励与荣誉称号】 <br />
+2018年 上海市青年五四奖章（标兵）<br />
+2015年 教育部自然科学一等奖 （排名第2）<br />
+2011年 全国振动理论及应用学术会议优秀论文奖 <br />
+2010年 中国振动工程学会青年科技奖 <br />
+2010年 日本学术振兴会(JSPS)奖学金 <br />
+2009年 全国优秀博士学位论文提名奖 <br />
+2008年 上海市优秀博士学位论文 <br />
+2006年 上海市优秀毕业生 <br />
+2005年 国际机械工程与力学学术会议ICMEM优秀论文奖<br />
+<br />
+2018年 上海交通大学机动学院最受欢迎教师奖<br />
+2018年 上海交通大学优秀博士论文导师奖<br />
+2017年 上海交通大学唐立新优秀学者奖<br />
+2017年 上海交通大学优秀教师奖<br />
+2016年 上海交通大学优秀班主任<br />
+2016年 上海交通大学十佳班主任 <br />
+2016年 上海交通大学机动学院最受欢迎教师奖<br />
+2012年 上海交通大学晨星青年学者奖励计划(A类) <br />
+2010年 上海交通大学优秀教师奖<br />
+2009年 上海交通大学晨星青年学者奖励计划(B类)<br />
+</div>
+            </li>
+                                </ul>
+        <script type="text/javascript">
+        $(".lb_js2 li:first").find("h2").addClass("on");
+        $(".lb_js2 li:first").find(".txtk").slideDown();
+        $(function() {
+            //菜单隐藏展开
+            var tabs_i = 0
+            $('.lb_js2 li h2').click(function() {
+                var _self = $(this);
+                var j = $('.lb_js2 li h2').index(_self);
+                if (tabs_i == j) return false;
+                tabs_i = j;
+                $('.lb_js2 li').each(function(e) {
+                    if (e == tabs_i) {
+                        $(this).find("h2").addClass("on");
+                        $(this).find(".txtk").slideDown();
+                    } else {
+                        $(this).find("h2").removeClass("on");
+                        $(this).find(".txtk").slideUp();
+                    }
+                });
+            });
+        })
+        </script>
+        <div class="clear"></div>
+    </div>
+</div>
+    <div class="foot">
+        <div class="main">
+            <div class="f1">
+                <div class="cd_f">
+                    <!--<a href="#">网站地图</a>|--><a href="/website_statement.html">网站声明</a>|<a href="http://www.sjtu.edu.cn" target="_blank">友情链接</a>|<a href="/political_institution.html">联系我们</a>|<a href="http://202.120.53.238" target="_blank">返回旧版</a></div>
+                <div class="fnr">Copyright © 2016 上海交通大学机械与动力工程学院 版权所有</div>
+                <div class="fx">
+                    <span class="s1">分享到</span>
+
+                    <!-- <a href="http://www.jiathis.com/send/?webid=weixin&url=http%3A%2F%2Fme.sjtu.edu.cn%2F%2Findex%2Fpage_detail%2Fteacher_directory1%2Fzhangwenming&title=张文明" class="cd_f1" target="_blank"></a> -->
+                    <a href="javascript:void(0);" onclick="window.open('http://bshare.optimix.cn/barCode?site=weixin&url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title));" class="cd_f1" target="_blank"></a>
+
+                    <!-- <a href="http://www.jiathis.com/send/?webid=tsina&url=http%3A%2F%2Fme.sjtu.edu.cn%2F%2Findex%2Fpage_detail%2Fteacher_directory1%2Fzhangwenming&title=张文明" class="cd_f2" target="_blank"></a> -->
+                    <a href="javascript:void(0);" onclick="window.open('http://bshare.optimix.cn/bshare_redirect?site=sinaminiblog&url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title));" class="cd_f2" target="_blank"></a>
+
+                    <!-- <a href="http://www.jiathis.com/send/?webid=cqq&url=http%3A%2F%2Fme.sjtu.edu.cn%2F%2Findex%2Fpage_detail%2Fteacher_directory1%2Fzhangwenming&title=张文明" class="cd_f3" target="_blank"></a> -->
+                    <a href="javascript:void(0);" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title));" class="cd_f3" target="_blank"></a>
+
+                </div>
+            </div>
+            <div class="f2"><img src="/images/ewm.jpg" />
+                <p>Email：sjtume@sjtu.edu.cn
+                    <br> 地址：上海市东川路800号上海交通大学闵行校区机械与动力工程学院
+                    <br> 邮编：200240 </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+<style type="text/css">
+.wx_loading{position:fixed;top:0;left:0;bottom:0;right:0;z-index:10000;background-color:rgba(0, 0, 0, 0)}.wx_loading_inner{text-align:center;background-color:rgba(0, 0, 0, 0.5);color:#fff;position:fixed;top:50%;left:50%;margin-left:-70px;margin-top:-48px;width:140px;border-radius:6px;font-size:14px;padding:58px 0 10px 0}.wx_loading_icon{position:absolute;top:15px;left:50%;margin-left:-16px;width:24px;height:24px;border:2px solid #fff;border-radius:24px;-webkit-animation:gif 1s infinite linear;animation:gif 1s infinite linear;clip:rect(0 auto 12px 0)}@keyframes gif{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}@-webkit-keyframes gif{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);}}
+</style>
+<div class="wx_loading" id="wxloading" style="display: none;">
+    <div class="wx_loading_inner">
+        <i class="wx_loading_icon"></i>
+        请求加载中...
+    </div>
+</div>
+</html>
